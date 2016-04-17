@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  estatus: MyString
+  codigo: MyString
+  dependencia: MyString
+  fecha_compra: 2016-04-17 18:00:43
+
+two:
+  nombre: MyString
+  estatus: MyString
+  codigo: MyString
+  dependencia: MyString
+  fecha_compra: 2016-04-17 18:00:43

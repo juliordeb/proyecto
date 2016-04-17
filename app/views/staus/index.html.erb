@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Staus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Contenido</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @staus.each do |stau| %>
+      <tr>
+        <td><%= stau.nombre %></td>
+        <td><%= stau.contenido %></td>
+&nbsp;
+        <td><%= link_to 'Show', stau %>|</td>
+        <td><%= link_to 'Edit', edit_stau_path(stau) %>|</td>
+        <td><%= link_to 'Destroy', stau, method: :delete, data: { confirm: 'Are you sure?' } %>|</td>
+      
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo estatus', new_stau_path, class:"btn btn-primary" %>

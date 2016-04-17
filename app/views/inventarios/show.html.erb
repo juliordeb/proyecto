@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @inventario.nombre %>
+</p>
+
+<p>
+  <strong>Estatus:</strong>
+  <%= @inventario.estatus %>
+</p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @inventario.codigo %>
+</p>
+
+<p>
+  <strong>Dependencia:</strong>
+  <%= @inventario.dependencia %>
+</p>
+
+<p>
+  <strong>Fecha compra:</strong>
+  <%= @inventario.fecha_compra %>
+</p>
+
+<%= link_to 'Edit', edit_inventario_path(@inventario) %> |
+<%= link_to 'Back', inventarios_path %>
