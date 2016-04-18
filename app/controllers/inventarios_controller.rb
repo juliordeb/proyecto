@@ -1,6 +1,6 @@
 class InventariosController < ApplicationController
-  before_action :set_inventario, only: [:show, :edit, :update, :destroy]
-
+  #before_action :set_inventario, only: [:show, :edit, :update, :destroy]
+before_filter :authenticate_user!
   # GET /inventarios
   # GET /inventarios.json
   def index
